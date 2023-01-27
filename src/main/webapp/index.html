@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+<form action="calculator" method="POST">
+    <p>Input numbers</p>
+    Num1 <input type="text" name="number1" /><br>
+    Num2 <input type="text" name="number2" /><br>
+    <p>Choose an action</p>
+    <ul>
+        <li><input type="radio" name="action" />+</li>
+        <li><input type="radio" name="action" />-</li>
+        <li><input type="radio" name="action" />*</li>
+        <li><input type="radio" name="action" />/</li>
+    </ul>
+    <input type="submit" value="Submit">
+</form>
+<p></p>
+</body>
+</html>

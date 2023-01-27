@@ -26,9 +26,8 @@ public class Calculator extends HttpServlet {
             for (String action : actions) {
                 switch (action) {
                     case "+":
-                        //System.out.println(num1 + num2);
-                        printWriter.println("<p> Action: " + action + "</p>");
-                        printWriter.println("<p> Result : " + num1 + action + num2 + "</p>");
+                        System.out.println(num1 + num2);
+
                         break;
                     case "-":
                         System.out.println(num1 - num2);
@@ -42,15 +41,15 @@ public class Calculator extends HttpServlet {
                         break;
                     default:
                         System.out.println("Mistake");
-                        printWriter.println("<p> Action: " + action + "</p>");
-                        printWriter.println("<p> Result : " + num1 + action + num2 + "</p>");
 
 
-                }
+
+                }printWriter.println("<p> Action: " + action + "</p>");
 
 
 
             }
+            printWriter.println("<p> Result : " + result + "</p>");
         } finally {
             printWriter.close();
         }

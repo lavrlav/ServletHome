@@ -2,26 +2,18 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <style>
-        li {
-            list-style-type: none;
-        }
-    </style>
 </head>
 <body>
-<form action="calculator" method="POST">
+<form action="/api/calculator" method="post">
     <p>Input numbers</p>
-    Num1 <input type="text" name="number1" /><br>
-    Num2 <input type="text" name="number2" /><br>
+    Num1 <input type="text" name="number1"/><br>
+    Num2 <input type="text" name="number2"/><br>
     <p>Choose an action</p>
-    <ul>
-        <li><input type="radio" name="action" value="addition" />+</li>
-        <li><input type="radio" name="action" value="subtraction" />-</li>
-        <li><input type="radio" name="action" value="multiplication"/>*</li>
-        <li><input type="radio" name="action" value="division"/>/</li>
-    </ul>
-    <input type="submit" value="Submit">
+    <input type="radio" name="act" value="+">+<br>
+    <input type="radio" name="act" value="-">-<br>
+    <input type="radio" name="act" value="*">*<br>
+    <input type="radio" name="act" value="/">/<br><br>
+    <input type="submit" name="result" value="submit"><br><br>
 </form>
-<p></p>
 </body>
 </html>
